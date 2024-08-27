@@ -8,6 +8,13 @@ import os
 import threading
 import json
 from os import environ
+from os import environ
+
+API = environ.get("API", "98b78e3ad4c8b9248bd726cfc3efe86eabc30f08") # shortlink api
+URL = environ.get("URL", "publicearn.com") # shortlink domain without https://
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "") # how to open link 
+BOT_USERNAME = environ.get("BOT_USERNAME", "SAVExRESTRICTED_CONTENT_BOT") # bot username without @
+VERIFY = environ.get("VERIFY", "True") # set True Or False and make sure spelling is correct and first letter capital.
 
 bot_token = environ.get("TOKEN", "") 
 api_hash = environ.get("HASH", "") 
